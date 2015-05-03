@@ -94,6 +94,26 @@ void mat_LU(mat A, mat L, mat U, _dim)
 		}
 	}
 }
+
+void lu2(mat A, mat L, mat U, int n) {
+	_zero(L); _zero(U);
+	
+	for(int i=0; i < n; i++)
+		for(int j=0; j < n; j++)
+			U[i][j] = A[i][j];
+ 
+	for(int i=0; i < n; i++)
+		L[i][i] = 1;
+	
+	for(int j=0; j < n; j++)
+		for(int i=j+1; i < n; i++) {
+			double m = A[i][j] / A[i-1][j];
+			L[i][j] = m;
+			//-m*A[i-1][j] and A[i][j]
+			for(int k=0; k < n; k++)
+				U[i][k] -= m*U[i-1][k];
+		}
+}
  
 double A3[][3] = {{ 1, 3, 5 }, { 2, 4, 7 }, { 1, 1, 0 }};
 double A4[][4] = {{11, 9, 24, 2}, {1, 5, 2, 6}, {3, 17, 18, 1}, {2, 5, 7, 1}};
