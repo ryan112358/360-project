@@ -106,6 +106,9 @@ double A4[][4] = {{11, 9, 24, 2}, {1, 5, 2, 6}, {3, 17, 18, 1}, {2, 5, 7, 1}};
  
 int main()
 {
+	double sum = 0;
+	_sum_k(5, 10, 3, sum);
+	printf("Sum = %f",sum);
 	int n = 3;
 	mat A, L, P, U;
  

@@ -76,7 +76,7 @@ void mat_pivot(mat a, mat p, _dim) {
 	}
 }
  
-#define _LU(a, l, u, p) mat_LU(a, l, u, p, n)
+#define _LU(a, l, u) mat_LU(a, l, u, n)
 void mat_LU(mat A, mat L, mat U, _dim)
 {
 	_zero(L); _zero(U);
@@ -100,23 +100,23 @@ double A4[][4] = {{11, 9, 24, 2}, {1, 5, 2, 6}, {3, 17, 18, 1}, {2, 5, 7, 1}};
  
 int main() {
 	int n = 3;
-	mat A, L, P, U;
+	mat A, L, U;
  
-	_new(L); _new(P); _new(U);
+	_new(L); _new(U);
 	A = _copy(A3);
-	_LU(A, L, U, P);
-	_show(A); _show(L); _show(U); _show(P);
-	_del(A);  _del(L);  _del(U);  _del(P);
+	_LU(A, L, U);
+	_show(A); _show(L); _show(U);
+	_del(A);  _del(L);  _del(U);
  
 	printf("\n");
  
 	n = 4;
  
-	_new(L); _new(P); _new(U);
+	_new(L); _new(U);
 	A = _copy(A4);
-	_LU(A, L, U, P);
-	_show(A); _show(L); _show(U); _show(P);
-	_del(A);  _del(L);  _del(U);  _del(P);
+	_LU(A, L, U);
+	_show(A); _show(L); _show(U);
+	_del(A);  _del(L);  _del(U);
  
 	return 0;
 }
