@@ -105,14 +105,15 @@ void lu2(mat A, mat L, mat U, int n) {
 	for(int i=0; i < n; i++)
 		L[i][i] = 1;
 	
-	for(int j=0; j < n; j++)
+	for(int j=0; j < n; j++){
 		for(int i=j+1; i < n; i++) {
-			double m = A[i][j] / A[i-1][j];
+			double m = U[i][j] / U[j][j];
 			L[i][j] = m;
 			//-m*A[i-1][j] and A[i][j]
-			for(int k=0; k < n; k++)
-				U[i][k] -= m*U[i-1][k];
+			for(int k=j; k < n; k++)
+				U[i][k] -= m*U[j][k];
 		}
+	}
 }
  
 double A3[][3] = {{ 1, 3, 5 }, { 2, 4, 7 }, { 1, 1, 0 }};
@@ -121,22 +122,22 @@ double A4[][4] = {{11, 9, 24, 2}, {1, 5, 2, 6}, {3, 17, 18, 1}, {2, 5, 7, 1}};
 int main() {
 	int n = 3;
 	mat A, L, U;
+	mat mul;
  
 	_new(L); _new(U);
 	A = _copy(A3);
-	_LU(A, L, U);
+	lu2(A, L, U, n);
 	_show(A); _show(L); _show(U);
 	_del(A);  _del(L);  _del(U);
- 
-	printf("\n");
  
 	n = 4;
  
 	_new(L); _new(U);
 	A = _copy(A4);
-	_LU(A, L, U);
+	lu2(A, L, U, n);
 	_show(A); _show(L); _show(U);
 	_del(A);  _del(L);  _del(U);
+
  
 	return 0;
 }
