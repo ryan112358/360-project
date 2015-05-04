@@ -53,6 +53,7 @@ void mat_show(mat x, char *fmt, _dim)
 			printf(j < n - 1 ? "  " : i == n - 1 ? " ]\n" : "\n");
 		}
 	}
+	printf("\n");
 }
  
 #define _mul(a, b) mat_mul(a, b, n)
