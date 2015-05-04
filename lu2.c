@@ -9,7 +9,7 @@
 #define for_ij for_i for_j
 #define for_ijk for_ij for_k
 #define _dim int n
-#define _swap(x, y) { typeof(x) tmp = x; x = y; y = tmp; }
+#define _swap(x, y) { __typeof__(x) tmp = x; x = y; y = tmp; }
 #define _sum_k(a, b, c, s) { s = 0; foreach(k, a, b) s+= c; }
  
 typedef double **mat;
