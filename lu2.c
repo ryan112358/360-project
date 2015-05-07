@@ -107,10 +107,11 @@ void lu2(mat A, mat L, mat U, int n) {
 		L[i][i] = 1;
 	
 	for(int j=0; j < n; j++){
+		// this loop can be parallelized
 		for(int i=j+1; i < n; i++) {
 			double m = U[i][j] / U[j][j];
 			L[i][j] = m;
-			//-m*A[i-1][j] and A[i][j]
+			// this loop can also be parallelized
 			for(int k=j; k < n; k++)
 				U[i][k] -= m*U[j][k];
 		}
