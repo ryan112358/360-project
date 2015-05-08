@@ -21,9 +21,13 @@
 
 \section{Introduction}
 
+\subsection{Background}
+
 LU Factorization is the most common technique used to solve systems of linear equations.  It is most useful when solving a dense linear system and is only appropriate when the system is square.  It works by decomposing a square matrix $A$ into an lower triangle matrix, $L$ and an upper triangular matrix $U$ such that 
 
 $$ A = LU $$
+
+\subsection{Impact}
 
 Triangular matrices have a number of nice properties that make them easier to work with.  For example, if $ T $ is a triangular matrix, then you can solve the equation
 
@@ -34,6 +38,20 @@ in $O(n^2)$ time, as opposed to $O(n^3)$ for full matrices.  Computationally, th
 $$ A x = b_i $$
 
 for $ 1 \leq i \leq k $ in $ O(n^3 + k n^2) $ as opposed to $ O(k n^3) $.
+
+\subsection{Use Cases}
+
+Dense linear algebra is very important for mathematicians, scientists, and engineers alike.  Linear algebra comes up in so many situations:
+
+\begin{itemize}
+\item Physics
+\item Partial differential equations
+\item Graph theory
+\item Statistics / Curve Fitting
+\item Sports Ranking
+\end{itemize}
+
+Solving linear systems is a key component of linear algebra, and LU factorization is the best known way to solve these systems.  Having a highly optimized LU Factorization algorithm gives you the ability to (1) solve systems faster, and (2) solve bigger systems. 
 
 \section{Existing Work}
 
