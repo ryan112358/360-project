@@ -6,6 +6,7 @@
 \usepackage{color}
 \usepackage{listings}
 \usepackage{graphicx}
+\usepackage{hyperref}
 
 \definecolor{lightgray}{gray}{0.5}
 \pagestyle{fancy}
@@ -20,6 +21,41 @@
 
 \section{Introduction}
 
+LU Factorization is the most common technique used to solve systems of linear equations.  It is most useful when solving a dense linear system and is only appropriate when the system is square.  It works by decomposing a square matrix $A$ into an lower triangle matrix, $L$ and an upper triangular matrix $U$ such that 
 
+$$ A = LU $$
+
+Triangular matrices have a number of nice properties that make them easier to work with.  For example, if $ T $ is a triangular matrix, then you can solve the equation
+
+$$ T x = b $$ 
+
+in $O(n^2)$ time, as opposed to $O(n^3)$ for full matrices.  Computationally, this means we can solve $k$ equations of the form 
+
+$$ A x = b_i $$
+
+for $ 1 \leq i \leq k $ in $ O(n^3 + k n^2) $ as opposed to $ O(k n^3) $.
+
+\section{Existing Work}
+
+\section{Approach}
+
+We will start off with a simple implementation of LU factorization that is not optimized for any particular architecture which will serve as a starting point to measure performance improvements.  This implementation will be a direct translation of the algorithm described in this video: 
+\url{https://www.youtube.com/watch?v=UlWcofkUDDU}.  One nice property that this code has is that it's 'obviously correct', so it's very readable.  That being said, it is completely oblivious to the cache configuration and the underlying architecture that it is intended to be executed on.
+
+\subsection{Architecture}
+
+We are optimizing this code for ...
+
+\subsection{Optimizations}
+
+TO-DO: cache, loop unrolling, openMP
+
+\section{Results}
+
+\subsection{Sequential Optimizations}
+
+\subsection{Parallel Optimizations}
+
+\section{Conclusion}
 
 \end{document}
