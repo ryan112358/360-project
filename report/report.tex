@@ -62,7 +62,7 @@ We will start off with a simple implementation of LU factorization that is not o
 
 \subsection{Architecture}
 
-We are optimizing this code for ...
+Our initial optimizations target a multicore CPU architecture, such as the current Intel Haswell series i7 4970K processor. By utilizing OpenMP, our code will be accessible on a wide variety of platforms. This project may also utilize CUDA in order to implement parallel optimizations on the GPU. GPU parallelization is advantageous as it allows us to take advantage of a large number of cores + threads. Code optimizations will target the most recent nvidia GTX 970 GPU. 
 
 \subsection{Optimizations}
 
