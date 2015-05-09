@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
  
 void zero(double **A, int n) { 
 	for(int i=0; i < n; i++)
@@ -80,6 +81,27 @@ void check_LU(double **A, int n) {
 			}
 	printf("Test Passed!! \n");
 }
+
+void benchmark_LU(int n, int trials){
+	clock_t t = 0;
+	double **L = new_matrix(n);
+	double **U = new_matrix(n);
+	for(int i=0; i < trials; i++) {
+		double **A = rand_matrix(n);
+		t -= clock();
+		lu(A,L,U,n);
+		t += clock();
+		free(A);
+	}
+	free(L); free(U);
+	printf( "A matrix of size %d x %d took an average of %f seconds to factor.\n", n, n, ((float)t)/(trials*CLOCKS_PER_SEC)); 
+}
+
+void benchmark() {
+	for(int n=64; n <= 2048; n*=2) {
+		benchmark_LU(n, 1);
+	}
+}
   
 int main() {
 	double **A = rand_matrix(3);
@@ -92,6 +114,8 @@ int main() {
 	//show(A,3);
 	//show(L,3);
 	//show(U,3);
+	
+	benchmark();
 	
 	return 0;
 }
