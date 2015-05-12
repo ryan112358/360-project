@@ -8,6 +8,8 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage[margin=1in]{geometry}
+\usepackage[default]{sourcesanspro}
+\usepackage{sourcecodepro}
 
 \definecolor{lightgray}{gray}{0.5}
 \pagestyle{fancy}
@@ -43,6 +45,7 @@ for $ 1 \leq i \leq k $ in $ O(n^3 + k n^2) $ as opposed to $ O(k n^3) $.
 Dense linear algebra is very important for mathematicians, scientists, and engineers alike.  Linear algebra comes up in so many situations:
 
 \begin{itemize}
+\setlength\itemsep{0.25em}
 \item Physics
 \item Partial differential equations
 \item Graph theory
@@ -56,7 +59,91 @@ Solving linear systems is a key component of linear algebra, and LU factorizatio
 
 \subsection{Triangular Matrices}
 
+Triangular matrices have a number of nice properties.  Most importantly, if $A$ is a triangular matrix, then you can solve an equation of the form $Ax = b$ directly using back substitution.  The time complexity of back substitution is $O(n^2)$ which is much faster than the $O(n^3)$ time complexity to solve full systems.  To see this, consider the general system of equations which we want to solve for ${\bf x}$
+$$
+\begin{bmatrix}
+	a_{11} &  a_{12} &  a_{13}  \\
+	0  &  a_{22} &  a_{23}  \\
+	0  &  0  &  a_{33}
+\end{bmatrix}
+\begin{bmatrix}
+x_1\\x_2\\x_3
+\end{bmatrix}
+=
+\begin{bmatrix}
+b_1\\b_2\\b_3
+\end{bmatrix}
+$$
+
+We can see immediately that 
+
+$$x_{3} = \frac{b_3}{a_{33}}$$
+
+We can take this result, and substitute it through column three of the matrix.  Now we can immediately solve for $x_2$ and repeat until all $x_i$ have been solved for.
+
 \subsection{Algorithm Description}
+
+As we've seen from the previous section, back substitution is relatively cheap compared to triangularization.  The LU factorization algorithm is an iterative algorithm that iteratively zeroes out columns of $A$ until it becomes an upper triangular matrix.  
+$$
+A = 
+\begin{bmatrix}
+	a_{11} &  a_{12} &  a_{13}  \\
+	a_{21}  &  a_{22} &  a_{23}  \\
+	a_{31}  &  a_{32}  &  a_{33}
+\end{bmatrix}
+$$
+
+we start by  zeroing out everything below the diagonal in row $1$ by replacing row $i$ with a {\emph linear combination} of row $i$ and row $1$ such that the first element is $0$.  Thus, after one iteration of the algorithm, $U$ would look like:
+
+$$
+U = 
+\begin{bmatrix}
+	a_{11} &  a_{12} &  a_{13}  \\
+	0  &  a'_{22} &  a'_{23}  \\
+	0  &  a'_{32}  &  a'_{33}
+\end{bmatrix}
+$$
+
+After the next iteration, we would zero out everything below the diagonal in row $2$ by replacing row $i$ with a linear combination of row $i$ with row $2$ such that the second element is $0$.  After two iterations of the algorithm, $U$ would look like:
+
+$$
+U = 
+\begin{bmatrix}
+	a_{11} &  a_{12} &  a_{13}  \\
+	0  &  a'_{22} &  a'_{23}  \\
+	0  &  0  &  a''_{33}
+\end{bmatrix}
+$$
+
+The values of $L$ (the lower triangular matrix) can be trivially filled in as the multiplication factor used in the linear combination of the rows.  
+
+This process repeats until $U$ is a upper triangular matrix, meaning that all elements below the main diagonal are $0$. 
+
+\subsection{Access Pattern}
+
+In the standard implementation of LU factorization, the access pattern for $L$ and $U$ respectively is:
+
+\begin{center}
+\includegraphics[scale=0.30]{figures/lu1a}\hspace{1em}
+\includegraphics[scale=0.30]{figures/lu1b}
+\hspace{1em}
+\includegraphics[scale=0.30]{figures/lu1c}
+\hspace{1em}
+\includegraphics[scale=0.30]{figures/lu2} 
+
+
+\includegraphics[scale=0.30]{figures/lu3}
+\hspace{1em}
+\includegraphics[scale=0.30]{figures/lu4}
+\hspace{1em}
+\includegraphics[scale=0.30]{figures/lu2b}
+\hspace{1em}
+\includegraphics[scale=0.30]{figures/lu5}
+$$\vdots$$
+\includegraphics[scale=0.33]{figures/lu6}
+$$\vdots$$
+\includegraphics[scale=0.33]{figures/lu7}
+\end{center}
 
 \section{Existing Work}
 
