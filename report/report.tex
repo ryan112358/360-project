@@ -7,6 +7,7 @@
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
 
 \definecolor{lightgray}{gray}{0.5}
 \pagestyle{fancy}
@@ -20,8 +21,6 @@
 \maketitle
 
 \section{Introduction}
-
-\subsection{Background}
 
 LU Factorization is the most common technique used to solve systems of linear equations.  It is most useful when solving a dense linear system and is only appropriate when the system is square.  It works by decomposing a square matrix $A$ into an lower triangle matrix, $L$ and an upper triangular matrix $U$ such that 
 
@@ -53,12 +52,18 @@ Dense linear algebra is very important for mathematicians, scientists, and engin
 
 Solving linear systems is a key component of linear algebra, and LU factorization is the best known way to solve these systems.  Having a highly optimized LU Factorization algorithm gives you the ability to (1) solve systems faster, and (2) solve bigger systems. 
 
+\section{Background}
+
+\subsection{Triangular Matrices}
+
+\subsection{Algorithm Description}
+
 \section{Existing Work}
 
 \section{Approach}
 
-We will start off with a simple implementation of LU factorization that is not optimized for any particular architecture which will serve as a starting point to measure performance improvements.  This implementation will be a direct translation of the algorithm described in this video: 
-\url{https://www.youtube.com/watch?v=UlWcofkUDDU}.  One nice property that this code has is that it's 'obviously correct', so it's very readable.  That being said, it is completely oblivious to the cache configuration and the underlying architecture that it is intended to be executed on.
+We will start off with a simple implementation of LU factorization that is not optimized for any particular architecture which will serve as a starting point to measure performance improvements.
+
 
 \subsection{Architecture}
 
@@ -66,7 +71,7 @@ Our initial optimizations target a multicore CPU architecture, such as the curre
 
 \subsection{Optimizations}
 
-TO-DO: cache, loop unrolling, openMP
+TO-DO: cache, loop unrolling, openMP, vector operations, cuda
 
 \section{Results}
 
