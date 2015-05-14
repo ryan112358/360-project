@@ -67,6 +67,35 @@ void lu(double **A, double **L, double **U, int n) {
 	}
 }
 
+/**
+* LU Factorization with loop unrolling and vectorization
+* Compiler options
+* Intel compiler: icc -xHOST -O3 
+* GCC: gcc -march=native -O3
+*/
+void lu_v2(double **A, double **L, double **U, int n) {
+	zero(L,n); zero(U,n);
+	
+	for(int i=0; i < n; i++)
+		for(int j=0; j < n; j++)
+			U[i][j] = A[i][j];
+ 
+	for(int i=0; i < n; i++)
+		L[i][i] = 1;
+	
+	for(int j=0; j < n; j++){
+		// this loop can be parallelized
+		for(int i=j+1; i < n; i++) {
+			double m = U[i][j] / U[j][j];
+			L[i][j] = m;
+			#pragma vector always
+			#pragma unroll 4
+			for(int k=j; k < n; k++)
+				U[i][k] -= m*U[j][k];
+		}
+	}
+}
+
 void check_LU(double **A, int n) {
 	double **L = new_matrix(n);
 	double **U = new_matrix(n);
