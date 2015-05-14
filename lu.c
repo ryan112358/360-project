@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
+#include <omp.h>
  
 void zero(double **A, int n) { 
 	for(int i=0; i < n; i++)
@@ -61,6 +62,7 @@ void lu(double **A, double **L, double **U, int n) {
 			double m = U[i][j] / U[j][j];
 			L[i][j] = m;
 			// this loop can also be parallelized
+			#pragma omp for schedule(dynamic, 4) 
 			for(int k=j; k < n; k++)
 				U[i][k] -= m*U[j][k];
 		}
