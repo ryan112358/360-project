@@ -111,7 +111,6 @@ void luAll(double **A, double **L, double **U, int n) {
 				double m = U[i][j] / U[j][j];
 				L[i][j] = m;
         			#pragma vector always
-        			#pragma unroll 4
 				for(int k=j; k < n; k++)
 					U[i][k] -= m*U[j][k];
 			}
@@ -128,7 +127,6 @@ void luUnroll(double **A, double **L, double **U, int n) {
 		for(int i=j+1; i < n; i++) {
 			double m = U[i][j] / U[j][j];
 			L[i][j] = m;
-			#pragma unroll 4
 			for(int k=j; k < n; k++)
 				U[i][k] -= m*U[j][k];
 		}
@@ -166,7 +164,6 @@ void luUnrollVec(double **A, double **L, double **U, int n) {
 			double m = U[i][j] / U[j][j];
 			L[i][j] = m;
 			#pragma vector always
-			#pragma unroll 4
 			for(int k=j; k < n; k++)
 				U[i][k] -= m*U[j][k];
 		}
