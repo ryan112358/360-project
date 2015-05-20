@@ -1,0 +1,9 @@
+Many implementations of the parallelizing a LU Factorization have been attempted recently. At the 13th IEEE International 
+Conference on Computational Science and Engineering, a group from Greece presented a parallelization using a pipelining
+technique in an OpenMP programming environment. They did this using coordinating threads with the help of an array of queues.
+Another study done at NJIT parallelized by focusing on load balancing techniques to translate hardware parallelization into
+high speedups on real applications by ordering the matrices into BDB for and eliminating data dependencies and communication
+during the factorization. 
+
+http://www.researchgate.net/profile/Panagiotis_Michailidis/publication/220775793_Implementing_Parallel_LU_Factorization_with_Pipelining_on_a_MultiCore_Using_OpenMP/links/0fcfd4fee08a04ad16000000.pdf
+http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1303282
