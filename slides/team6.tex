@@ -247,9 +247,98 @@ n & None & -O1 & -O2 & Vector & -O3 & Unroll & Native\\
 \begin{frame}
 \frametitle{Sequential Results}
 
-
-
+\begin{center}
+\includegraphics[scale=0.5]{figures/fig2}
+\end{center}
 
 \end{frame}
+
+\begin{frame}
+\frametitle{Sequential Results}
+
+\begin{center}
+\includegraphics[scale=0.5]{figures/fig3}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Sequential Results}
+
+\begin{center}
+\includegraphics[scale=0.5]{figures/fig4}
+\end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Parallel Implementation}
+
+\begin{lstlisting}
+void lu(double **A, double **L, double **U, int n) {
+    zero (L, n);
+    copy (U, A, n);
+    init (L, n);
+    for(int j=0; j < n; j++) {
+        #pragma omp parallel for schedule(static,8)  
+        for(int i=j+1; i < n; i++) {
+            double m = U[i][j] / U[j][j];
+            L[i][j] = m;
+            for(int k=j; k < n; k++)
+                U[i][k] -= m*U[j][k];
+        }
+    }
+}
+\end{lstlisting}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Parallel Results}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+n & Native & 2 Threads & 4 Threads & 8 Threads\\
+\hline
+100	& 0.000338 & 	0.000337 & 0.001492	& 0.000409 \\
+200	& 0.001417 & 	0.0014 & 0.000963 &	0.000725 \\
+400	& 0.012435 & 0.006679 & 0.003321 & 0.002973 \\
+800	& 0.066184 & 0.036134 & 0.02161 & 0.021725 \\
+1600 & 0.6732 &	0.354768 & 0.221714 & 0.219362 \\
+3200 & 8.05138 & 4.457911 & 3.46599 & 3.567894 \\
+6400 & 66.760086 & 36.836628 & 28.870047 & 30.108377 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\setlength\itemsep{0.25em}
+\item From 1 core to 2 cores, we achieved a scalability of 1.81. 
+\item Past 2 cores, we saw diminishing returns.  
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Parallel Results}
+
+\begin{center}
+\includegraphics[scale=0.5]{figures/fig5}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusion}
+\begin{itemize}
+\item Free 4.75x speedup with just compiler flags
+\item 10 x speedup by targeting multi-core machines
+\item Don't need to sacrifice code readability for performance
+\item Vectorization didn't help as much as expected
+\end{itemize}
+\end{frame}
+
+
 
 \end{document}
