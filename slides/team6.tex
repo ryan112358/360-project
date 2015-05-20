@@ -1,6 +1,9 @@
 \documentclass{beamer}
 
-\usepackage{graphicx, amsmath, amsthm, amssymb, tikz}
+\usepackage{graphicx, amsmath, amsthm, amssymb, tikz, listings}
+
+\lstset{language=C, frame=single}
+
 \definecolor{UDBlue}{RGB}{0,83,159}
 \definecolor{UDGold}{RGB}{255,210,0}
 
@@ -11,7 +14,7 @@
 \beamertemplatenavigationsymbolsempty
 
 \author{Ryan McKenna, Matthew Paul, James Kerrigan \\
-Nicholas Gerassimakis, Neil Duffy }
+Niko Gerassimakis, Neil Duffy }
 \title{Team 6: LU Factorization}
 \subtitle{Optimizations targeting towards multicore processors}
 \date{\today}
@@ -26,8 +29,172 @@ Nicholas Gerassimakis, Neil Duffy }
 
 \begin{frame}
 
-stuff
+\frametitle{Linear Algebra}
+
+\begin{itemize}
+\item The quintessential problem in linear algebra is solving a linear system of equations
+
+$$
+\begin{bmatrix}
+	a_{11} &  a_{12} &  a_{13}  \\
+	a_{21}  &  a_{22} &  a_{23}  \\
+	a_{31}  &  a_{32}  &  a_{33}
+\end{bmatrix}
+\begin{bmatrix}
+x_1\\x_2\\x_3
+\end{bmatrix}
+=
+\begin{bmatrix}
+b_1\\b_2\\b_3
+\end{bmatrix}
+$$
+
+\item We want to find values of $ x_1, x_2, $ and $ x_3 $ such that 
+
+\begin{enumerate}
+\item $ a_{11} x_1 + a_{12} x_2 + a_{13} x_3 = b_1 $
+\item $ a_{21} x_1 + a_{22} x_2 + a_{23} x_3 = b_2 $
+\item $ a_{31} x_1 + a_{32} x_2 + a_{33} x_3 = b_3 $
+\end{enumerate}
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Impact}
+
+\begin{itemize}
+\item Linear algebra comes up in a lot of professions:
+\begin{itemize}
+\setlength\itemsep{0.25em}
+\item Physics
+\item Partial differential equations
+\item Graph theory
+\item Statistics / Curve Fitting
+\item Sports Ranking
+\end{itemize}
+
+\end{itemize}
 	
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Solving Linear Systems}
+
+\begin{itemize}
+\item If $A$ is an $ n $ x $ n $ matrix, solving a system of the form $ A x = b $ takes $ O(n^3) $ time.
+
+\item If $ A$ is a triangular matrix, then solving the system takes $ O(n^2) $ time
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{LU Factorization Background}
+
+\begin{itemize}
+\item LU Factorization works by decomposing a square matrix $A$ into a lower triangular matrix, $L$, and an upper triangular matrix, $U$:
+
+$$ A = L U $$
+
+$$ 
+\begin{bmatrix}
+	a_{11} &  a_{12} &  a_{13}  \\
+	a_{21}  &  a_{22} &  a_{23}  \\
+	a_{31}  &  a_{32}  &  a_{33}
+\end{bmatrix}
+=
+\begin{bmatrix}
+	l_{11} &  0 &  0  \\
+	l_{21}  &  l_{22} &  0  \\
+	l_{31}  &  l_{32}  &  l_{33}
+\end{bmatrix}
+\begin{bmatrix}
+	u_{11} &  u_{12} &  u_{13}  \\
+	0  &  u_{22} &  u_{23}  \\
+	0  &  0  &  u_{33}
+\end{bmatrix}
+$$
+
+\item With $ L $ and $ U $, we can solve $ A x = L U x = b $ in $ O(n^2) $.  
+
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Algorithm Description / Access Pattern}
+
+LU factorization is an $ O(n^3) $ algorithm:
+
+\begin{center}
+\includegraphics[scale=0.2]{figures/lu1a}\hspace{1em}
+\includegraphics[scale=0.2]{figures/lu1b}
+\hspace{1em}
+\includegraphics[scale=0.2]{figures/lu1c}
+\hspace{1em}
+\includegraphics[scale=0.2]{figures/lu2} 
+
+
+\includegraphics[scale=0.2]{figures/lu3}
+\hspace{1em}
+\includegraphics[scale=0.2]{figures/lu4}
+\hspace{1em}
+\includegraphics[scale=0.2]{figures/lu2b}
+\hspace{1em}
+\includegraphics[scale=0.2]{figures/lu5}
+$$\vdots$$
+\includegraphics[scale=0.2]{figures/lu6}
+$$\vdots$$
+\includegraphics[scale=0.2]{figures/lu7}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Implementation}
+
+\begin{lstlisting}
+void lu(double **A, double **L, double **U, int n) {
+    zero (L, n);
+    copy (U, A, n);
+    init (L, n);
+    for(int j=0; j < n; j++) {
+        for(int i=j+1; i < n; i++) {
+            double m = U[i][j] / U[j][j];
+            L[i][j] = m;
+            for(int k=j; k < n; k++)
+                U[i][k] -= m*U[j][k];
+        }
+    }
+}
+\end{lstlisting}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Approach}
+\begin{enumerate}
+\item Generate random matrices up to 6400 x 6400.
+\item Run and time 4 trials of the factorization algorithm for each matrix size.
+\item Repeat for every optimization configuration.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Optimizations}
+
+\begin{itemize}
+\item -O1, -O2, -O3
+\item loop unrolling
+\item vectorization
+\item native (architecture specific) optimizations
+\item openMP
+\end{itemize}
+
 \end{frame}
 
 \end{document}
