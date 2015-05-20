@@ -175,6 +175,17 @@ void lu(double **A, double **L, double **U, int n) {
 
 \end{frame}
 
+
+\begin{frame}
+\frametitle{Architecture}
+\begin{itemize}
+
+\item 
+
+
+\end{itemize}
+\end{frame}
+
 \begin{frame}
 \frametitle{Approach}
 \begin{enumerate}
@@ -194,6 +205,50 @@ void lu(double **A, double **L, double **U, int n) {
 \item native (architecture specific) optimizations
 \item openMP
 \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Compiler}
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Sequential Results}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+& \multicolumn{7}{|c|}{Optimization / Time (s)} \\
+\hline
+n & None & -O1 & -O2 & Vector & -O3 & Unroll & Native\\
+\hline
+100	& 0.0028 & 0.0010 & 0.0008 & 0.0005 & 0.0005 & 0.0004 & 0.0003 \\
+200	& 0.0101 & 0.0034 &	0.0026 & 0.0017 & 0.0018 & 0.0025 & 0.0014 \\
+400	& 0.07902 & 0.0219 & 0.0189 & 0.0158 & 0.01561 & 0.0151 & 0.0124 \\
+800	& 0.6222 & 0.1575 & 0.1070 & 0.0850 & 0.0821 & 0.0800 & 0.0662 \\
+1600 & 4.9364 & 1.3342 & 0.9388 & 0.7737 & 0.7900 & 0.7465 & 0.6732 \\
+3200&39.7114 & 11.7545 & 9.5557 & 8.4604 &	8.4156 & 8.1363 & 8.0514 \\
+6400 & 316.3 & 94.23 & 78.12 &	69.35 & 68.70 & 66.54 & 66.76\\
+\hline
+\end{tabular}
+
+\begin{itemize}
+\setlength\itemsep{0.25em}
+\item Going from no optimizations to -O1 gave nearly 400\% speedup.  
+\item Vectorization yielded an 11\% speedup.
+\item Loop unrolling gave a 3 \% speedup in the largest case.
+\item Native optimizations yieled a 15 \% speedup in the best case (n = 1600).  
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Sequential Results}
+
+
+
 
 \end{frame}
 
