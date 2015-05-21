@@ -224,6 +224,9 @@ void check_LU(solver *f, int n) {
 	printf("Test Passed!! \n");
 }
 
+/**
+ * measures how long it takes to do factorization
+ */
 float benchmark_LU(solver *f, int n, int trials){
 	double t = 0;
 	double **L = new_matrix(n);
@@ -240,6 +243,10 @@ float benchmark_LU(solver *f, int n, int trials){
 	return (float) t / trials;
 }
 
+/**
+ * wrapper for check_LU and benchmark_LU
+ * prints results of both
+ */
 void benchmark() {
 	solver *solvers[6] = { &lu, &luVec, &luUnroll, &luUnrollVec, &luParallel, &luAll };
 	for(int i=0; i < 6; i++)
