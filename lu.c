@@ -11,10 +11,16 @@ void zero(double **A, int n) {
 	memset(&A[0][0], 0, sizeof(double) * n * n);
 }
 
+/**
+ * copies dest, stores it in src
+ */
 void copy(double** dest, double** src, int n) {
 	memcpy(&dest[0][0], &src[0][0], sizeof(double) * n * n);
 }
 
+/**
+ * fills A's diagonal with 1s
+ */
 void init(double** A, int n) {
 	for (int i = 0; i < n; ++i) 
 		A[i][i] = 1;
