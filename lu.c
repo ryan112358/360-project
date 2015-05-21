@@ -71,7 +71,7 @@ void mult(double **A, double **B, double **C, int n) {
 }
 
 /**
- * basic lu factorization
+ * basic LU factorization
  * (no optimizations)
  */
 void lu(double **A, double **L, double **U, int n) {
@@ -94,6 +94,10 @@ void lu(double **A, double **L, double **U, int n) {
 /**
 * GCC: gcc -o lu -fopenmp -std=c99 lu.c
 */
+
+/**
+ * LU factorization with parallel optimizations
+ */
 void luParallel(double **A, double **L, double **U, int n) {
 
 	zero (L, n);
@@ -115,6 +119,10 @@ void luParallel(double **A, double **L, double **U, int n) {
 	}
 }
 
+/**
+ * LU factorization with all optimizations implemented
+ * (parallel, loop unrolling, vectorization)
+ */
 void luAll(double **A, double **L, double **U, int n) {
 
 	zero (L, n);
@@ -138,6 +146,9 @@ void luAll(double **A, double **L, double **U, int n) {
 	}
 }
 
+/**
+ * LU factorization with loop unrolling
+ */
 void luUnroll(double **A, double **L, double **U, int n) {
 	zero (L, n);
 	copy (U, A, n);
@@ -153,7 +164,9 @@ void luUnroll(double **A, double **L, double **U, int n) {
 	}
 }
 
-
+/**
+ * LU factorization with vectorization
+ */
 void luVec(double **A, double **L, double **U, int n) {
 	zero (L, n);
 	copy (U, A, n);
