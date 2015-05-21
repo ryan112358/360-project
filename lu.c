@@ -204,6 +204,9 @@ void luUnrollVec(double **A, double **L, double **U, int n) {
 	}
 }
 
+/**
+ * checks whether factorizations were successful
+ */
 void check_LU(solver *f, int n) {
 	double **A = rand_matrix(n);
 	double **L = new_matrix(n);
