@@ -149,6 +149,8 @@ In future work, we would like to use this access pattern to optimize the program
 
 \section{Existing Work}
 
+Many implementations of the parallelizing a LU Factorization have been attempted recently. At the 13th IEEE International Conference on Computational Science and Engineering, a group from Greece presented a parallelization using a pipelining technique in an OpenMP programming environment. They did this using coordinating threads with the help of an array of queues.  Another study done at NJIT parallelized by focusing on load balancing techniques to translate hardware parallelization into high speedups on real applications by ordering the matrices into BDB for and eliminating data dependencies and communication during the factorization. 
+
 \section{Approach}
 
 We will start off with a simple implementation of LU factorization that is not optimized for any particular architecture which will serve as a starting point to measure performance improvements.
