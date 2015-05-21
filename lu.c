@@ -20,6 +20,9 @@ void init(double** A, int n) {
 		A[i][i] = 1;
 }
 
+/**
+ * creates a new matrix of size n x n
+ */
 double** new_matrix(int n) {
 	double **A = (double**) malloc(sizeof(double*) * n);
 	A[0]  = (double*) malloc(sizeof(double) * n * n);
@@ -29,6 +32,9 @@ double** new_matrix(int n) {
 	return A;
 }
 
+/**
+ * creates an n x n matrix and fills it with random doubles
+ */
 double** rand_matrix(int n) {
 	double **A = new_matrix(n);
 	for(int i=0; i < n; i++)
@@ -37,6 +43,11 @@ double** rand_matrix(int n) {
 	return A;
 }
 
+/**
+ * prints matrix A
+ *
+ * n = size of one dimension of A
+ */
 void show(double **A, int n) {
 	for(int i=0; i < n; i++) {
 		for(int j=0; j < n; j++)
@@ -46,6 +57,9 @@ void show(double **A, int n) {
 	printf("\n");
 }
 
+/**
+ * multiplies matrices A and B, and stores the result in matrix C
+ */
 void mult(double **A, double **B, double **C, int n) {
 	for(int i=0; i < n; i++)
 		for(int j=0; j < n; j++) {
@@ -56,6 +70,10 @@ void mult(double **A, double **B, double **C, int n) {
 		}
 }
 
+/**
+ * basic lu factorization
+ * (no optimizations)
+ */
 void lu(double **A, double **L, double **U, int n) {
 
 	zero (L, n);
