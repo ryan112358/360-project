@@ -181,7 +181,9 @@ void lu(double **A, double **L, double **U, int n) {
 \frametitle{Architecture}
 \begin{itemize}
 
-\item 
+\item Intel i7-5930K CPU @ 3.50 GHz
+\item 6 cores and a total of 12 available threads
+\item Cache sizes: L1I: 32K, L1D: 32K, L2: 256K, L3: 15,360K.
 
 
 \end{itemize}
@@ -211,8 +213,11 @@ void lu(double **A, double **L, double **U, int n) {
 
 \begin{frame}
 \frametitle{Compiler}
-
-
+Both gcc and icc used in program compilation
+\begin{itemize}
+\item gcc -O3 -march=native -fopenmp -funroll-loops
+\item icc -O3 -xHOST -openmp -funroll-loops
+\end{itemize}
 
 \end{frame}
 

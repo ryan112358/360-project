@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.30)  20 MAY 2015 20:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.15)  20 MAY 2015 21:43
 entering extended mode
 **report.tex
-(C:\Users\Ryan\Documents\Repos\cisc360\360-project\report\report.tex
+(D:\GitHub\360-project\report\report.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,9 +13,9 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+("D:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+("D:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -30,24 +30,24 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count87
@@ -88,11 +88,11 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks19
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip46
 \f@ncyO@elh=\skip47
 \f@ncyO@erh=\skip48
@@ -103,27 +103,27 @@ Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \f@ncyO@olf=\skip53
 \f@ncyO@orf=\skip54
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("D:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+("D:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("D:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("D:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count99
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks20
 )
@@ -140,27 +140,27 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \lst@lineno=\count105
 \lst@maxwidth=\dimen115
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count106
 \lst@skipnumbers=\count107
 \lst@framebox=\box29
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+("D:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("D:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
@@ -168,14 +168,14 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 \Gin@req@height=\dimen116
 \Gin@req@width=\dimen117
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+("D:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+("D:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -216,25 +216,25 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("D:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen118
 \Hy@linkcounter=\count108
 \Hy@pagecounter=\count109
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+("D:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count110
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+("D:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -246,7 +246,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count111
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -271,19 +271,19 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+("D:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count116
 \c@bookmark@seq@number=\count117
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip55
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count118
 \Gm@cntv=\count119
@@ -298,39 +298,39 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen129
 \Gm@dimlist=\toks22
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\sourcesanspro\sourcesanspro.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("D:\Program Files\MiKTeX 2.9\tex\latex\sourcesanspro\sourcesanspro.sty"
 Package: sourcesanspro 2014/07/28 v2.4 Adobe's Source Sans Pro typeface
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
 Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("D:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
 \XKV@toks=\toks23
 \XKV@tempa@toks=\toks24
 \XKV@depth=\count121
 File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.def"
+("D:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.def"
 File: ot1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding OT1 on input line 43.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ly1\ly1enc.def"
+("D:\Program Files\MiKTeX 2.9\tex\latex\ly1\ly1enc.def"
 File: ly1enc.def 2009/07/22 v0.7 TeX 'n ANSI encoding (DPC/KB)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+("D:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 100.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
+("D:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\mweights\mweights.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\mweights\mweights.sty"
 Package: mweights 2013/07/21 (Bob Tennent) Support package for multiple-weight 
 font packages. 
 LaTeX Info: Redefining \bfseries on input line 22.
@@ -339,35 +339,35 @@ LaTeX Info: Redefining \rmfamily on input line 36.
 LaTeX Info: Redefining \sffamily on input line 53.
 LaTeX Info: Redefining \ttfamily on input line 70.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\sourcecodepro\sourcecodepro.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\sourcecodepro\sourcecodepro.sty"
 Package: sourcecodepro 2014/07/28 v2.3 Adobe's Source Code Pro typeface
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.def"
+("D:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.def"
 File: ot1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding OT1 on input line 43.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ly1\ly1enc.def"
+("D:\Program Files\MiKTeX 2.9\tex\latex\ly1\ly1enc.def"
 File: ly1enc.def 2009/07/22 v0.7 TeX 'n ANSI encoding (DPC/KB)
 LaTeX Font Info:    Redeclaring font encoding LY1 on input line 11.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+("D:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )))
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+("D:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
 
 LaTeX Warning: Unused global option(s):
     [12].
 
-(C:\Users\Ryan\Documents\Repos\cisc360\360-project\report\report.aux)
+(D:\GitHub\360-project\report\report.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
@@ -385,21 +385,21 @@ LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 22.
 LaTeX Font Info:    Try loading font information for LY1+ptm on input line 22.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ly1\ly1ptm.fd"
+("D:\Program Files\MiKTeX 2.9\tex\latex\ly1\ly1ptm.fd"
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Try loading font information for T1+SourceSansPro-LF on inp
 ut line 22.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\sourcesanspro\t1sourcesanspro-lf.fd"
+("D:\Program Files\MiKTeX 2.9\tex\latex\sourcesanspro\t1sourcesanspro-lf.fd"
 File: T1SourceSansPro-LF.fd 2014/07/28 (autoinst) Font definitions for T1/Sourc
 eSansPro-LF.
 )
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 22.
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("D:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
 \scratchdimen=\dimen130
@@ -416,10 +416,10 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
 \c@lstlisting=\count128
 \AtBeginShipoutBox=\box31
 Package hyperref Info: Link coloring OFF on input line 22.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+ ("D:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+("D:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count129
@@ -428,8 +428,8 @@ LaTeX Info: Redefining \ref on input line 22.
 LaTeX Info: Redefining \pageref on input line 22.
 LaTeX Info: Redefining \nameref on input line 22.
 
-(C:\Users\Ryan\Documents\Repos\cisc360\360-project\report\report.out)
-(C:\Users\Ryan\Documents\Repos\cisc360\360-project\report\report.out)
+(D:\GitHub\360-project\report\report.out)
+(D:\GitHub\360-project\report\report.out)
 \@outlinefile=\write3
 
 *geometry* driver: auto-detecting
@@ -486,7 +486,7 @@ LaTeX Font Warning: Font shape `OMS/SourceSansPro-LF/m/n' undefined
 
 [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/Matthew/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 96.
 
@@ -543,28 +543,25 @@ lable
 t line 142.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 142.
- [2 <C:/Users/Ryan/Documents/Repos/cisc360/360-project/report/figures/lu1a.png>
- <C:/Users/Ryan/Documents/Repos/cisc360/360-project/report/figures/lu1b.png> <C
-:/Users/Ryan/Documents/Repos/cisc360/360-project/report/figures/lu1c.png> <C:/U
-sers/Ryan/Documents/Repos/cisc360/360-project/report/figures/lu2.png>]
-<figures/lu6.png, id=91, 325.215pt x 144.54pt>
+ [2 <D:/GitHub/360-project/report/figures/lu1a.png> <D:/GitHub/360-project/repo
+rt/figures/lu1b.png> <D:/GitHub/360-project/report/figures/lu1c.png> <D:/GitHub
+/360-project/report/figures/lu2.png>] <figures/lu6.png, id=91, 325.215pt x 144.
+54pt>
 File: figures/lu6.png Graphic file (type png)
- <use figures/lu6.png>
+
+<use figures/lu6.png>
 Package pdftex.def Info: figures/lu6.png used on input line 143.
 (pdftex.def)             Requested size: 107.32127pt x 47.69833pt.
-
-<figures/lu7.png, id=92, 324.71312pt x 144.03813pt>
+ <figures/lu7.png, id=92, 324.71312pt x 144.03813pt>
 File: figures/lu7.png Graphic file (type png)
- <use figures/lu7.png>
+
+<use figures/lu7.png>
 Package pdftex.def Info: figures/lu7.png used on input line 145.
 (pdftex.def)             Requested size: 107.15565pt x 47.53271pt.
-
-[3 <C:/Users/Ryan/Documents/Repos/cisc360/360-project/report/figures/lu3.png> <
-C:/Users/Ryan/Documents/Repos/cisc360/360-project/report/figures/lu4.png> <C:/U
-sers/Ryan/Documents/Repos/cisc360/360-project/report/figures/lu2b.png> <C:/User
-s/Ryan/Documents/Repos/cisc360/360-project/report/figures/lu5.png> <C:/Users/Ry
-an/Documents/Repos/cisc360/360-project/report/figures/lu6.png> <C:/Users/Ryan/D
-ocuments/Repos/cisc360/360-project/report/figures/lu7.png>]
+ [3 <D:/GitHub/360-project/report/figures/lu3.png> <D:/GitHub/360-project/repor
+t/figures/lu4.png> <D:/GitHub/360-project/report/figures/lu2b.png> <D:/GitHub/3
+60-project/report/figures/lu5.png> <D:/GitHub/360-project/report/figures/lu6.pn
+g> <D:/GitHub/360-project/report/figures/lu7.png>]
 Overfull \hbox (55.87773pt too wide) in paragraph at lines 194--209
 [] [] 
  []
@@ -599,17 +596,14 @@ File: figures/fig5.png Graphic file (type png)
 <use figures/fig5.png>
 Package pdftex.def Info: figures/fig5.png used on input line 230.
 (pdftex.def)             Requested size: 209.33328pt x 156.99995pt.
- [5 <C:/Users/Ryan/Documents/Repos/cisc360/360-project/report/figures/fig1.png 
-(PNG copy)> <C:/Users/Ryan/Documents/Repos/cisc360/360-project/report/figures/f
-ig2.png (PNG copy)> <C:/Users/Ryan/Documents/Repos/cisc360/360-project/report/f
-igures/fig3.png (PNG copy)> <C:/Users/Ryan/Documents/Repos/cisc360/360-project/
-report/figures/fig4.png (PNG copy)> <C:/Users/Ryan/Documents/Repos/cisc360/360-
-project/report/figures/fig5.png (PNG copy)>]
+ [5 <D:/GitHub/360-project/report/figures/fig1.png (PNG copy)> <D:/GitHub/360-p
+roject/report/figures/fig2.png (PNG copy)> <D:/GitHub/360-project/report/figure
+s/fig3.png (PNG copy)> <D:/GitHub/360-project/report/figures/fig4.png (PNG copy
+)> <D:/GitHub/360-project/report/figures/fig5.png (PNG copy)>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 238.
  [6]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 238.
-
-(C:\Users\Ryan\Documents\Repos\cisc360\360-project\report\report.aux)
+ (D:\GitHub\360-project\report\report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 238.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 238.
 Package rerunfilecheck Info: File `report.out' has not changed.
@@ -622,27 +616,27 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 238.
  ) 
 Here is how much of TeX's memory you used:
  8384 strings out of 493921
- 123733 string characters out of 3147285
+ 123425 string characters out of 3147276
  241559 words of memory out of 3000000
  11521 multiletter control sequences out of 15000+200000
  76550 words of font info for 46 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  35i,12n,72p,795b,399s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Ryan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-crm1000.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/sourcesanspro/a_5tbsmu.
-enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/sourcesanspro/a_ggs4wk.enc}<C:
-/Program Files/MiKTeX 2.9/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/sourcesanspro/SourceSansPro-It
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/sourcesanspro/SourceSansPro
--Regular.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsy7.pfb>
-Output written on report.pdf (6 pages, 295242 bytes).
+ <C:\Users\Matthew\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\ecrm1000.pk>{D:/Program Files/MiKTeX 2.9/fonts/enc/dvips/sourcesanspro/a_5tbs
+mu.enc}{D:/Program Files/MiKTeX 2.9/fonts/enc/dvips/sourcesanspro/a_ggs4wk.enc}
+<D:/Program Files/MiKTeX 2.9/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold
+.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/adobe/sourcesanspro/SourceSansPro
+-It.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/adobe/sourcesanspro/SourceSans
+Pro-Regular.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmsy7.pfb>
+Output written on report.pdf (6 pages, 295295 bytes).
 PDF statistics:
  165 PDF objects out of 1000 (max. 8388607)
  21 named destinations out of 1000 (max. 500000)
