@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.30)  20 MAY 2015 18:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.30)  20 MAY 2015 20:42
 entering extended mode
 **team6.tex
 (C:\Users\Ryan\Documents\Repos\cisc360\360-project\slides\team6.tex
@@ -1026,18 +1026,21 @@ Overfull \hbox (47.78287pt too wide) has occurred while \output is active
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Ryan/Documents/R
 epos/cisc360/360-project/slides/delaware_logo.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 62.
 
+Package hyperref Warning: Option `pdfauthor' has already been used,
+(hyperref)                setting the option has no effect on input line 29.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 63.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 62.
+LaTeX Font Info:    Try loading font information for U+msb on input line 63.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 62.
+line 63.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\sansmathaccent\ot1mathkerncmss.fd"
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1046,121 +1049,98 @@ thkerncmss.
 File: delaware_logo.png Graphic file (type png)
 
 <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 62.
+Package pdftex.def Info: delaware_logo.png used on input line 63.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
-
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[2
+ [2
 
 ]
 File: delaware_logo.png Graphic file (type png)
  <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 81.
+Package pdftex.def Info: delaware_logo.png used on input line 82.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
+ [3
 
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
+]
+File: delaware_logo.png Graphic file (type png)
 
-[3
+<use delaware_logo.png>
+Package pdftex.def Info: delaware_logo.png used on input line 93.
+(pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
+ [4
 
 ]
 File: delaware_logo.png Graphic file (type png)
  <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 92.
+Package pdftex.def Info: delaware_logo.png used on input line 126.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
-
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[4
+ [5
 
 ]
-File: delaware_logo.png Graphic file (type png)
- <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 125.
-(pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
-
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[5
-
-] <figures/lu1a.png, id=64, 325.215pt x 144.54pt>
+<figures/lu1a.png, id=64, 325.215pt x 144.54pt>
 File: figures/lu1a.png Graphic file (type png)
  <use figures/lu1a.png>
-Package pdftex.def Info: figures/lu1a.png used on input line 154.
+Package pdftex.def Info: figures/lu1a.png used on input line 155.
 (pdftex.def)             Requested size: 65.04184pt x 28.90747pt.
 
 <figures/lu1b.png, id=65, 325.215pt x 145.04187pt>
 File: figures/lu1b.png Graphic file (type png)
  <use figures/lu1b.png>
-Package pdftex.def Info: figures/lu1b.png used on input line 154.
+Package pdftex.def Info: figures/lu1b.png used on input line 155.
 (pdftex.def)             Requested size: 65.04184pt x 29.00784pt.
 
 <figures/lu1c.png, id=66, 325.215pt x 145.54375pt>
 File: figures/lu1c.png Graphic file (type png)
  <use figures/lu1c.png>
-Package pdftex.def Info: figures/lu1c.png used on input line 154.
+Package pdftex.def Info: figures/lu1c.png used on input line 155.
 (pdftex.def)             Requested size: 65.04184pt x 29.10823pt.
 
 <figures/lu2.png, id=67, 326.21875pt x 145.54375pt>
 File: figures/lu2.png Graphic file (type png)
  <use figures/lu2.png>
-Package pdftex.def Info: figures/lu2.png used on input line 154.
+Package pdftex.def Info: figures/lu2.png used on input line 155.
 (pdftex.def)             Requested size: 65.24258pt x 29.10823pt.
 
 <figures/lu3.png, id=68, 325.71687pt x 144.54pt>
 File: figures/lu3.png Graphic file (type png)
  <use figures/lu3.png>
-Package pdftex.def Info: figures/lu3.png used on input line 154.
+Package pdftex.def Info: figures/lu3.png used on input line 155.
 (pdftex.def)             Requested size: 65.14221pt x 28.90747pt.
 
 <figures/lu4.png, id=69, 325.215pt x 144.03813pt>
 File: figures/lu4.png Graphic file (type png)
  <use figures/lu4.png>
-Package pdftex.def Info: figures/lu4.png used on input line 154.
+Package pdftex.def Info: figures/lu4.png used on input line 155.
 (pdftex.def)             Requested size: 65.04184pt x 28.8071pt.
 
 <figures/lu2b.png, id=70, 325.215pt x 144.54pt>
 File: figures/lu2b.png Graphic file (type png)
  <use figures/lu2b.png>
-Package pdftex.def Info: figures/lu2b.png used on input line 154.
+Package pdftex.def Info: figures/lu2b.png used on input line 155.
 (pdftex.def)             Requested size: 65.04184pt x 28.90747pt.
 
 <figures/lu5.png, id=71, 325.71687pt x 144.54pt>
 File: figures/lu5.png Graphic file (type png)
  <use figures/lu5.png>
-Package pdftex.def Info: figures/lu5.png used on input line 154.
+Package pdftex.def Info: figures/lu5.png used on input line 155.
 (pdftex.def)             Requested size: 65.14221pt x 28.90747pt.
 
 <figures/lu6.png, id=72, 325.215pt x 144.54pt>
 File: figures/lu6.png Graphic file (type png)
  <use figures/lu6.png>
-Package pdftex.def Info: figures/lu6.png used on input line 154.
+Package pdftex.def Info: figures/lu6.png used on input line 155.
 (pdftex.def)             Requested size: 65.04184pt x 28.90747pt.
 
 <figures/lu7.png, id=73, 324.71312pt x 144.03813pt>
 File: figures/lu7.png Graphic file (type png)
  <use figures/lu7.png>
-Package pdftex.def Info: figures/lu7.png used on input line 154.
+Package pdftex.def Info: figures/lu7.png used on input line 155.
 (pdftex.def)             Requested size: 64.94147pt x 28.8071pt.
 File: delaware_logo.png Graphic file (type png)
 
 <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 154.
+Package pdftex.def Info: delaware_logo.png used on input line 155.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
-
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[6
+ [6
 
  <C:/Users/Ryan/Documents/Repos/cisc360/360-project/slides/figures/lu1a.png> <C
 :/Users/Ryan/Documents/Repos/cisc360/360-project/slides/figures/lu1b.png> <C:/U
@@ -1191,64 +1171,42 @@ LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 )
 File: delaware_logo.png Graphic file (type png)
  <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 176.
+Package pdftex.def Info: delaware_logo.png used on input line 177.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
-
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[7
+ [7
 
 ]
 File: delaware_logo.png Graphic file (type png)
  <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 187.
+Package pdftex.def Info: delaware_logo.png used on input line 188.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
+ [8
 
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
+]
+File: delaware_logo.png Graphic file (type png)
 
-[8
+<use delaware_logo.png>
+Package pdftex.def Info: delaware_logo.png used on input line 197.
+(pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
+ [9
 
 ]
 File: delaware_logo.png Graphic file (type png)
  <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 196.
+Package pdftex.def Info: delaware_logo.png used on input line 210.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
-
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[9
+ [10
 
 ]
 File: delaware_logo.png Graphic file (type png)
- <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 209.
+
+<use delaware_logo.png>
+Package pdftex.def Info: delaware_logo.png used on input line 217.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
-
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[10
+ [11
 
 ]
-File: delaware_logo.png Graphic file (type png)
- <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 216.
-(pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
-
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[11
-
-] (C:\Users\Ryan\Documents\Repos\cisc360\360-project\slides\team6.vrb
+(C:\Users\Ryan\Documents\Repos\cisc360\360-project\slides\team6.vrb
 Overfull \hbox (4.94666pt too wide) in paragraph at lines 3--18
 [][]  
  []
@@ -1256,67 +1214,50 @@ Overfull \hbox (4.94666pt too wide) in paragraph at lines 3--18
 )
 File: delaware_logo.png Graphic file (type png)
  <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 245.
+Package pdftex.def Info: delaware_logo.png used on input line 246.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
+ [12
 
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[12
-
-] <figures/fig2.png, id=121, 418.66759pt x 314.00069pt>
+]
+<figures/fig2.png, id=121, 418.66759pt x 314.00069pt>
 File: figures/fig2.png Graphic file (type png)
-
-<use figures/fig2.png>
-Package pdftex.def Info: figures/fig2.png used on input line 254.
+ <use figures/fig2.png>
+Package pdftex.def Info: figures/fig2.png used on input line 255.
 (pdftex.def)             Requested size: 209.33328pt x 156.99995pt.
 File: delaware_logo.png Graphic file (type png)
- <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 254.
+
+<use delaware_logo.png>
+Package pdftex.def Info: delaware_logo.png used on input line 255.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
-
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[13
+ [13
 
  <C:/Users/Ryan/Documents/Repos/cisc360/360-project/slides/figures/fig2.png (PN
-G copy)>] <figures/fig3.png, id=129, 418.66759pt x 314.00069pt>
+G copy)>]
+<figures/fig3.png, id=129, 418.66759pt x 314.00069pt>
 File: figures/fig3.png Graphic file (type png)
-
-<use figures/fig3.png>
-Package pdftex.def Info: figures/fig3.png used on input line 263.
+ <use figures/fig3.png>
+Package pdftex.def Info: figures/fig3.png used on input line 264.
 (pdftex.def)             Requested size: 209.33328pt x 156.99995pt.
 File: delaware_logo.png Graphic file (type png)
- <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 263.
+
+<use delaware_logo.png>
+Package pdftex.def Info: delaware_logo.png used on input line 264.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
-
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[14
+ [14
 
  <C:/Users/Ryan/Documents/Repos/cisc360/360-project/slides/figures/fig3.png (PN
-G copy)>] <figures/fig4.png, id=136, 418.66759pt x 314.00069pt>
+G copy)>]
+<figures/fig4.png, id=136, 418.66759pt x 314.00069pt>
 File: figures/fig4.png Graphic file (type png)
-
-<use figures/fig4.png>
-Package pdftex.def Info: figures/fig4.png used on input line 272.
+ <use figures/fig4.png>
+Package pdftex.def Info: figures/fig4.png used on input line 273.
 (pdftex.def)             Requested size: 209.33328pt x 156.99995pt.
 File: delaware_logo.png Graphic file (type png)
- <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 272.
+
+<use delaware_logo.png>
+Package pdftex.def Info: delaware_logo.png used on input line 273.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
-
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[15
+ [15
 
  <C:/Users/Ryan/Documents/Repos/cisc360/360-project/slides/figures/fig4.png (PN
 G copy)>]
@@ -1324,67 +1265,50 @@ G copy)>]
 File: delaware_logo.png Graphic file (type png)
 
 <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 294.
+Package pdftex.def Info: delaware_logo.png used on input line 295.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
+ [16
 
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[16
-
-] (C:\Users\Ryan\Documents\Repos\cisc360\360-project\slides\team6.vrb)
+]
+(C:\Users\Ryan\Documents\Repos\cisc360\360-project\slides\team6.vrb)
 File: delaware_logo.png Graphic file (type png)
 
 <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 321.
+Package pdftex.def Info: delaware_logo.png used on input line 322.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
+ [17
 
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[17
-
-] <figures/fig5.png, id=155, 418.66759pt x 314.00069pt>
+]
+<figures/fig5.png, id=155, 418.66759pt x 314.00069pt>
 File: figures/fig5.png Graphic file (type png)
-
-<use figures/fig5.png>
-Package pdftex.def Info: figures/fig5.png used on input line 330.
+ <use figures/fig5.png>
+Package pdftex.def Info: figures/fig5.png used on input line 331.
 (pdftex.def)             Requested size: 209.33328pt x 156.99995pt.
 File: delaware_logo.png Graphic file (type png)
- <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 330.
+
+<use delaware_logo.png>
+Package pdftex.def Info: delaware_logo.png used on input line 331.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
-
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[18
+ [18
 
  <C:/Users/Ryan/Documents/Repos/cisc360/360-project/slides/figures/fig5.png (PN
 G copy)>]
 File: delaware_logo.png Graphic file (type png)
  <use delaware_logo.png>
-Package pdftex.def Info: delaware_logo.png used on input line 340.
+Package pdftex.def Info: delaware_logo.png used on input line 341.
 (pdftex.def)             Requested size: 69.8217pt x 28.45274pt.
-
-Overfull \hbox (47.78287pt too wide) has occurred while \output is active
- [][]  
- []
-
-[19
+ [19
 
 ]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
- (C:\Users\Ryan\Documents\Repos\cisc360\360-project\slides\team6.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 343.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 343.
+
+(C:\Users\Ryan\Documents\Repos\cisc360\360-project\slides\team6.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 343.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 343.
 Package rerunfilecheck Info: File `team6.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1395,7 +1319,7 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 344.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 343.
  ) 
 Here is how much of TeX's memory you used:
  20979 strings out of 493921
@@ -1413,7 +1337,7 @@ onts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb>
-Output written on team6.pdf (19 pages, 304394 bytes).
+Output written on team6.pdf (19 pages, 303604 bytes).
 PDF statistics:
  205 PDF objects out of 1000 (max. 8388607)
  39 named destinations out of 1000 (max. 500000)
