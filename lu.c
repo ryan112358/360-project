@@ -1,3 +1,11 @@
+/**
+ * Ryan McKenna
+ * Matthew Paul
+ * Niko Gerassimakis
+ * Neil Duffy
+ * James Kerrigan
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
