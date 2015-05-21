@@ -257,12 +257,12 @@ void benchmark() {
 	solver *solvers[6] = { &lu, &luVec, &luUnroll, &luUnrollVec, &luParallel, &luAll };
 	for(int i=0; i < 6; i++)
 		check_LU(solvers[i],25);
-	printf("n, lu, luVec, luUnroll, luVecUnroll, luParallel, luAll\n");
+	printf("n,\tlu,\t\tluVec,\t\tluUnroll,\tluVecUnroll,\tluParallel,\tluAll\n");
 	for(int n=100; n <= 2000; n*=2) {
-		printf("%d, ", n);
+		printf("%d,\t", n);
 		for(int s=0; s < 6; s++) {
 			float t = benchmark_LU(solvers[s], n, 8);
-			printf("%f, ",t);
+			printf("%f,\t",t);
 		}
 		printf("\n");
 	}
